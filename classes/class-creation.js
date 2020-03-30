@@ -41,7 +41,7 @@ describe('Class creation', () => {
     assert.equal(tester.isLazy(), false);
   });
   it('anonymous class', () => {
-    const classType = typeof {};
+    const classType = typeof class {};
     assert.equal(classType, 'function');
   });
 });
